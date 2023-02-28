@@ -1,3 +1,10 @@
+*
+{
+    margin: 0;
+    padding: 0px;
+}
+
+
 .logo img{
     height: 60px;
     width: 200px;
@@ -5,4 +12,44 @@
 
 .btn-user {
     margin-left: auto;
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+.icon{
+    color: white;
+
+
+}
+.icon-social ul li a{
+    background-color: lightcyan;
+    padding: 5px;
+    border-radius: 3px;
+    color: #333;
+    transition: .2s;
+}
+
+.icon-social ul li{
+    transition: .2s;
+}
+
+.icon-social ul:hover a{
+    filter: blur(1px);
+
+}
+.icon-social ul li a:hover{
+    filter: none;
+}
+.icon-social ul li:hover{
+    transform: translateY(-3px) scale(1.1);
+
+}
+
+
+  @media (min-width: 990px) {
+    .img-carousel {
+        height: 550px;
+    }
   }

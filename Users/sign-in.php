@@ -5,11 +5,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExtraRango</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="http://localhost/ExtraRango/css/style.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="bg-light">
   <div>
@@ -17,9 +18,9 @@
   </div>
   <div class="container d-flex justify-content-center align-items-center vh-100">
     
-    <div class="card p-3 form">
+    <div class="card p-3 w-50 form">
       <div class="text-center">
-    <img src="../imagenes/Logo_ExtraRango.png" height= 80px width=250px alt="logo">
+    <img src="../imagenes/Logo_ExtraRango.png" height= 75px width=250px alt="logo">
     </div>  
     <h1 class="text-center">Iniciar Sesión</h1>
       <form action="POST">

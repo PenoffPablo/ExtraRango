@@ -31,7 +31,7 @@
             </a>
             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
               <li><a class="dropdown-item text-primary" href="#">Tienda</a></li>
-              <li><hr class="dropdown-divider"></li>
+              <li><hr class="dropdown-divider bg-light"></li>
               <li><a class="dropdown-item text-primary" href="#">Medios de pago</a></li>
             </ul>
           </li>
@@ -41,14 +41,9 @@
             <button class="btn btn-primary mx-2" type="submit">Buscar</button>
           </form>
           <div class="d-flex align-items-center btn-user">
-            <button class="btn btn-outline-primary mx-2" type="submit">Registrarse <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-fill-add" viewBox="0 0 16 17">
-  <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm.5-5v1h1a.5.5 0 0 1 0 1h-1v1a.5.5 0 0 1-1 0v-1h-1a.5.5 0 0 1 0-1h1v-1a.5.5 0 0 1 1 0Zm-2-6a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
-  <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
-</svg></button>
-            <button class="btn btn-outline-primary mx-2 " type="submit">Iniciar Sesión <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 18">
-  <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
-  <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
-</svg></button>
+          <a href="../Users/sign-in.php" class="btn btn-outline-primary mx-2" type="submit">Registrarse <i class="bi bi-person-fill-add"></i>
+            <a href="../Users/login.php" class="btn btn-outline-primary mx-2 " type="submit">Iniciar Sesión <i class="bi bi-person-circle"></i></a>
+
           </div>
       </div>
     </div>
