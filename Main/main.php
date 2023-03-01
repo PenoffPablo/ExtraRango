@@ -15,7 +15,7 @@
    ?> 
     </div>
 
-    <div class="col-7">
+    <div class="col-8 container">
     <?php
    include_once("productos.php")
    ?> 

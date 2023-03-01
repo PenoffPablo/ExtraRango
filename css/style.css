@@ -17,18 +17,24 @@
   a{
     text-decoration: none;
   }
+  :root {
+    --instagram: #e4405f;
+    --whatsapp: #4dc247;
+    --facebook: #365cad;
+  }
 
-.icon{
-    color: white;
 
-
-}
 .icon-social ul li a{
-    background-color: lightcyan;
     padding: 5px;
     border-radius: 3px;
     color: #333;
     transition: .2s;
+}
+
+.icon{
+    background-color: lightcyan;
+    padding: 5px 6px ;
+    border-radius: 4px;
 }
 
 .icon-social ul li{
@@ -47,6 +53,40 @@
 
 }
 
+.icon-social ul li .whatsapp:hover{
+    background: var(--whatsapp);
+}
+.icon-social ul li .facebook:hover{
+    background: var(--facebook);
+}
+.icon-social ul li .instagram:hover{
+    background: var(--instagram);
+}
+.accordion{
+    margin-top: 10px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.products{
+    margin-top: 10px;
+    display: flex;
+    border-radius: 10px;
+    background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+
+.card-img-top{
+    width:auto;
+}
+
+.card{
+    display: flex;
+    margin:15px  auto;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 0;
+}
 
   @media (min-width: 990px) {
     .img-carousel {
