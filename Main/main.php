@@ -9,7 +9,7 @@
 <body class="container-fluid">
     <div class="row">
 
-    <div class="col-3">
+    <div class="col-3 navigation">
    <?php
    include_once("nav.php")
    ?> 

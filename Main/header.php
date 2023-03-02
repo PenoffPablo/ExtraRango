@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExtraRango</title>
-    <link rel="stylesheet" href="../css/style.css">
+
 </head>
 <body>
 <header class="bg-white">
@@ -40,7 +40,7 @@
             <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
             <button class="btn btn-primary mx-2" type="submit">Buscar</button>
           </form>
-          <div class="d-flex align-items-center btn-user">
+          <div class="d-flex align-items-center justify-content-center btn-user">
           <a href="../Users/sign-in.php" class="btn btn-outline-primary mx-2" type="submit">Registrarse <i class="bi bi-person-fill-add"></i>
             <a href="../Users/login.php" class="btn btn-outline-primary mx-2 " type="submit">Iniciar Sesión <i class="bi bi-person-circle"></i></a>
 

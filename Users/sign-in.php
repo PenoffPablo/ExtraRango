@@ -10,7 +10,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/estilos.css">
 </head>
 <body class="bg-light">
   <div>
@@ -18,19 +18,19 @@
   </div>
   <div class="container d-flex justify-content-center align-items-center vh-100">
     
-    <div class="card p-3 w-50 form">
-      <div class="text-center">
-    <img src="../imagenes/Logo_ExtraRango.png" height= 75px width=250px alt="logo">
+    <div class="card p-3 form-register">
+      <div class="text-center img-form mx-auto">
+    <img src="../imagenes/Logo_ExtraRango.png" height= 75px width=250px alt="logo" class="">
     </div>  
     <h1 class="text-center">Iniciar Sesión</h1>
       <form action="POST">
         <div class="mb-3">
           <label for="name" class="form-label">Nombre</label>
-          <input type="text" name="name" id="name" class="form-control" required>
+          <input type="text" name="name" id="name" class="form-control" pattern="[a-zA-Z]{3,12}" required>
         </div>
         <div class="mb-3">
           <label for="apellido" class="form-label">Apellido</label>
-          <input type="text" name="lastName" id="lastName" class="form-control" required>
+          <input type="text" name="lastName" id="lastName" class="form-control" pattern="[a-zA-Z0-9]{8,16}"required>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Correo Electrónico</label>
