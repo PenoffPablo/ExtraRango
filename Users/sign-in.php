@@ -23,27 +23,30 @@
     <img src="../imagenes/Logo_ExtraRango.png" height= 75px width=250px alt="logo" class="">
     </div>  
     <h1 class="text-center">Iniciar Sesión</h1>
-      <form action="POST">
+      <form action="../Lógica/base_de_datos.php" METHOD="POST">
         <div class="mb-3">
           <label for="name" class="form-label">Nombre</label>
           <input type="text" name="name" id="name" class="form-control" pattern="[a-zA-Z]{3,12}" required>
         </div>
         <div class="mb-3">
           <label for="apellido" class="form-label">Apellido</label>
-          <input type="text" name="lastName" id="lastName" class="form-control" pattern="[a-zA-Z0-9]{8,16}"required>
+          <input type="text" name="lastName" id="lastName" class="form-control" pattern="[a-zA-Z]{3,16}"required>
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Correo Electrónico</label>
           <input type="email" name="email" id="email" class="form-control" required>
         </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Teléfono</label>
+          <input type="number" name="phone" id="phone" class="form-control" required>
+        </div>
+
         <div class="mb-3">
           <label for="password" class="form-label">Constraseña</label>
-          <input type="text" name="lastName" id="lastName" class="form-control" required>
+          <input type="password" name="pass" id="pass" class="form-control" required>
         </div>
-        <div class="mb-3">
-          <label for="password" class="form-label">Confirmar Contraseña</label>
-          <input type="password" name="password" id="password" class="form-control" required>
-        </div>
+
         <div class="text-center">
           <button type="submit" class="btn btn-primary">Registrarse</button>
         </div>
