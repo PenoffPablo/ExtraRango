@@ -12,13 +12,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="../css/estilos.css">
 </head>
-<body class="bg-light">
-  <div>
-  
-  </div>
-  <div class="container d-flex justify-content-center align-items-center vh-100">
+<body class="bg-light ">
+ 
+  <div class="container d-flex align-items-center justify-content-center card p-3 mx-auto">
     
-    <div class="card p-3 form-register">
+    <div class="container mx-auto">
       <div class="text-center img-form mx-auto">
     <img src="../imagenes/Logo_ExtraRango.png" height= 75px width=250px alt="logo" class="">
     </div>  
@@ -27,14 +25,14 @@
       <form action="../BBDD/base_de_datos.php" METHOD="POST" enctype="multipart/form-data">
         <div class="mb-3">
           <label for="name" class="form-label">Nombre</label>
-          <input type="text" name="name" id="name" class="form-control" pattern="[a-zA-Z]{3,12}" required>
-             <ul><li>Debe contener letras de la A a la Z, y debe tener entre 3 y 12 caracteres</li></ul>
+          <input type="text" name="name" id="name" class="form-control" pattern="[a-zA-Z]{3,12}" placeholder="Debe tener entre 3 y 12 caracteres" required>
+
         </div>
      
         <div class="mb-3">
           <label for="apellido" class="form-label">Apellido</label>
-          <input type="text" name="lastName" id="lastName" class="form-control" pattern="[a-zA-Z]{3,16}" required>
-          <ul><li>Debe contener letras de la A a la Z, y debe tener entre 3 y 15 caracteres</li></ul>
+          <input type="text" name="lastName" id="lastName" class="form-control" pattern="[a-zA-Z]{3,16}" placeholder="Debe tener entre 3 y 15 caracteres" required>
+
         </div>
         <div class="mb-3">
           <label for="email" class="form-label">Correo Electrónico</label>
@@ -48,25 +46,18 @@
 
         <div class="mb-3">
           <label for="password" class="form-label">Contraseña</label>
-          <input type="password" name="pass" id="pass" class="form-control" required>
-          <ul><li>Debe contener letras de la A a la Z y algún numero del 0 al 9</li>
-              <li>Debe contener de 8 a 16 caracteres </li>
-        </ul>
+          <input type="password" name="pass" id="pass" class="form-control" required placeholder="Debe contener de 8 a 16 caracteres">
         </div>
 
         <div class="mb-3">
         <label for="imagen">Selecciona una imagen de perfil:</label>
-    <input type="file" id="imagen" name="imagen" required><br>
+    <input type="file" id="imagen" name="imagen" class="archivo-label" required><br>
 
         </div>
         <ul><li>Formatos permitidos: PNG/JPG</li></ul>
         <div class="text-center">
           <button type="submit" class="btn btn-primary">Registrarse</button>
         </div>
-
-        <div class="errores">
-          
-        /div>
       </form>
     </div>
   </div>

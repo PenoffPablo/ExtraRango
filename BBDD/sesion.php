@@ -1,7 +1,6 @@
 <?php
 session_start();
 
-include("base_de_datos.php")
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
@@ -21,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
   }
 
-  $sql = "SELECT * FROM usuarios WHERE nombre_de_usuario = '$email' AND contraseña = '$password'";
+  $sql = "SELECT * FROM usuarios WHERE email = '$email' AND contraseña = '$password'";
   $result = mysqli_query($conexion, $sql);
 
   if (!$result || mysqli_num_rows($result) === 0) {
@@ -33,7 +32,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $_SESSION['username'] = $username;
 
   // Redirigir a la página de inicio de sesión exitoso
-  header('Location: index.php');
+  header('Location: Main/index.php');
   exit;
 }
 ?>

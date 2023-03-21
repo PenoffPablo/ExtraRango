@@ -23,7 +23,7 @@
     <img src="../imagenes/Logo_ExtraRango.png" height= 75px width=250px alt="logo">
     </div>  
     <h1 class="text-center">Iniciar Sesión</h1>
-      <form action="sesion.php" method="POST">
+      <form action="../BBDD/sesion.php" method="POST">
         <div class="mb-3">
           <label for="email" class="form-label">Correo Electrónico</label>
           <input type="email" name="email" id="email" class="form-control" required>

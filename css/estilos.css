@@ -1,130 +1,133 @@
-
-
-.logo img{
-    height: 60px;
-    width: 200px;
-}
-
-.btn-user {
-    margin-left: auto;
-  }
-
-
-
-  a{
-    text-decoration: none;
-  }
-  :root {
-    --instagram: #e4405f;
-    --whatsapp: #4dc247;
-    --facebook: #365cad;
-  }
-
-
-.icon-social ul li a{
-    padding: 5px;
-    border-radius: 3px;
-    color: #333;
-    transition: .2s;
-}
-
-.icon{
-    background-color: lightcyan;
-    padding: 5px 6px ;
-    border-radius: 4px;
-}
-
-.icon-social ul li{
-    transition: .2s;
-}
-
-.icon-social ul:hover a{
-    filter: blur(1px);
-
-}
-.icon-social ul li a:hover{
-    filter: none;
-}
-.icon-social ul li:hover{
-    transform: translateY(-3px) scale(1.1);
-
-}
-
-.icon-social ul li .whatsapp:hover{
-    background: var(--whatsapp);
-}
-.icon-social ul li .facebook:hover{
-    background: var(--facebook);
-}
-.icon-social ul li .instagram:hover{
-    background: var(--instagram);
-}
-.accordion{
-    margin-top: 20px;
-    border-radius: 10px;
-    background-color: white;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-.products{
-    margin-top: 20px;
-    display: flex;
-    border-radius: 10px;
-    background-color: white;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
-}
-
-.card-img-top{
-    width:auto;
-}
-
-.card{
-    display: flex;
-    margin:15px  auto;
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+* {margin: 0;
     padding: 0;
-}
-
-  @media (min-width: 990px) {
-    .img-carousel {
-        height: 550px;
-    }
-    #form-login{
-        width: 50%; 
-        height: 60%;
-    }
+ }
  
-    .form-register{
-        width: 50%;
-    }
-  }
-
-  @media (max-width: 700px){
-    .footer{
-        text-align: center;
-    }
-
-    .navigation{
-        width: 60%;
-        margin: 10px auto;
-        justify-content: center;
-        
-    }
-
-    .cat-nav .tratamiento-nav{
-        display: flex;
-    }
-
-    .btn-user{
-        margin-top: 10px;
-        width: auto;
-    }
+ .logo img{
+     height: 60px;
+     width: 200px;
+ }
+ 
+ .btn-user {
+     margin-left: auto;
+   }
+ 
+ 
+   input[type="file"]::before {
+     content: none;
+   }
+ 
+   a{
+     text-decoration: none;
+   }
+   :root {
+     --instagram: #e4405f;
+     --whatsapp: #4dc247;
+     --facebook: #365cad;
+   }
+ 
+ 
+ .icon-social ul li a{
+     padding: 5px;
+     border-radius: 3px;
+     color: #333;
+     transition: .2s;
+ }
+ 
+ .icon{
+     background-color: lightcyan;
+     padding: 5px 6px ;
+     border-radius: 4px;
+ }
+ 
+ .icon-social ul li{
+     transition: .2s;
+ }
+ 
+ .icon-social ul:hover a{
+     filter: blur(1px);
+ 
+ }
+ .icon-social ul li a:hover{
+     filter: none;
+ }
+ .icon-social ul li:hover{
+     transform: translateY(-3px) scale(1.1);
+ 
+ }
+ 
+ .icon-social ul li .whatsapp:hover{
+     background: var(--whatsapp);
+ }
+ .icon-social ul li .facebook:hover{
+     background: var(--facebook);
+ }
+ .icon-social ul li .instagram:hover{
+     background: var(--instagram);
+ }
+ .accordion{
+     margin-top: 20px;
+     border-radius: 10px;
+     background-color: white;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ }
+ .products{
+     margin-top: 20px;
+     display: flex;
+     border-radius: 10px;
+     background-color: white;
+   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+ 
+ }
+ 
+ .card-img-top{
+     width:auto;
+ }
+ 
+ .card{
+     display: flex;
+     margin:15px  auto;
+     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+     padding: 0;
+ }
+ 
+   @media (min-width: 990px) {
+     .img-carousel {
+         height: 550px;
+     }
+     #form-login{
+         width: 80%; 
+         height: 60%;
+     }
   
-
-    .img-form img{
-        width: 200px;
-        height: 60px;
-        text-align: center;
-        justify-content: center;
-    }
-  }
+  
+   }
+ 
+   @media (max-width: 700px){
+     .footer{
+         text-align: center;
+     }
+ 
+     .navigation{
+         width: 60%;
+         margin: 10px auto;
+         justify-content: center;
+         
+     }
+ 
+     .cat-nav .tratamiento-nav{
+         display: flex;
+     }
+ 
+     .btn-user{
+         margin-top: 10px;
+         width: auto;
+     }
+   
+ 
+     .img-form img{
+         width: 200px;
+         height: 60px;
+         text-align: center;
+         justify-content: center;
+     }
+   }
