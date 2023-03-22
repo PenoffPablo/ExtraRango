@@ -1,7 +1,13 @@
 <?php
 session_start();
 
+<<<<<<< HEAD
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+=======
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+
+>>>>>>> 89df6bfc082b1db345eaca6598f056be6fcad2f7
   $email = $_POST['email'];
   $password = $_POST['password'];
 
@@ -10,6 +16,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     exit;
   }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 89df6bfc082b1db345eaca6598f056be6fcad2f7
   $conexion = mysqli_connect('localhost', 'root', '', 'tienda_online');
 
   if (!$conexion) {

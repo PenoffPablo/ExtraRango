@@ -17,7 +17,6 @@ $contenido_img = file_get_contents($img_perfil);
 $Extensiones_permitidas = array('png', 'jpg');
 $fileExtension = pathinfo($_FILES['imagen']['name'], PATHINFO_EXTENSION);
 
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($name) || empty($lastName) || empty($email) || empty($phone) || empty($pass) || empty($img_perfil)) {
         die('Por favor, complete todos los campos del formulario.');
