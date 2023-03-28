@@ -1,3 +1,29 @@
+<?php
+session_start();
+include("../BBDD/conexion.php");
+
+if (isset($_SESSION['id_usuario'])) {
+    $user_id = $_SESSION['id_usuario'];
+    $sql = "SELECT * FROM usuarios WHERE id_usuario = '$user_id'";
+    $resultado = mysqli_query($conexion, $sql);
+
+    if (mysqli_num_rows($resultado) == 1) {
+        $row = mysqli_fetch_assoc($resultado);
+
+        $nombre = $row["nombre"];
+        $apellido = $row["apellido"];
+        $email = $row["email"];
+        $telefono = $row["telefono"];   
+    } else {
+        echo "Error al obtener los datos del usuario";
+    }
+} else {
+        header('Location: ../Users/login.php');
+        exit();
+    }
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -22,41 +48,51 @@
         include_once("../Main/header.php")
         ?>
         </header
-    <div class="container-fluid mt-4">
-        <div class="row mx-auto">
-            <div class="col-md-4">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-6 mx-auto">
                 <div class="card p-3">
-                    <div class="card-body text-center">
-                        <img src="https://via.placeholder.com/150" alt="Imagen de perfil" class="img-fluid rounded-circle mb-2">
-                        <h5 class="card-title">Nombre de usuario</h5>
-                        <p class="card-text">Correo electrónico: usuario@correo.com</p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-8">
-                <div class="card p-3 w-80">
+
                     <div class="card-body">
-                        <h5 class="card-title">Información personal</h5>
-                        <form>
-                            <div class="form-group">
-                                <label for="nombre">Nombre</label>
-                                <input type="text" class="form-control" id="nombre" value="Nombre de usuario">
-                            </div>
-                            <div class="form-group">
-                                <label for="apellido">Apellido</label>
-                                <input type="text" class="form-control" id="apellido" value="Apellido de usuario">
-                            </div>
-                            <div class="form-group">
-                                <label for="telefono">Teléfono</label>
-                                <input type="tel" class="form-control" id="telefono" value="555-5555">
-                                </div>
-                                <br>
-                                <a href="#"><h5>¿Desea cambiar su contraseña?</h5></a><br>
-                                <a href="#"><h5>¿Desea cambiar su correo electrónico?</h5></a><br>
-                                <a href="#"><h5>Preguntas frecuentes</h5></a><br>
-                               <a href="#"><h5>Cerrar Sesión</h5><br></a>
-                            </div>
-                        </div>
+                        <h3 class="card-title text-center">Información personal</h3>
+                        <div class="card-body"><br>
+                        <h5 class="card-title"><i class="bi bi-file-person-fill"></i> Nombre de usuario: <?php echo "$nombre  $apellido"; ?></h5><hr><br>
+                        
+                        <h5 class="card-text"><i class="bi bi-envelope-at-fill"></i> Correo electrónico: <?php echo "$email"?></p><hr><br>
+                      
+                        <h5><i class="bi bi-telephone-fill"></i> Teléfono: <?php echo "$telefono"?></h5><hr>
                     </div>
+                                <br>
+                                <a href="../Users/change-pass.php"><h5>¿Desea cambiar su contraseña?</h5></a><br>
+                                
+                                <a href="../Users/change-phone.php"><h5>¿Desea cambiar su número de teléfono?</h5></a><br>
+                                <a href="../Main/index.php"><h5>Cerrar Sesión</h5><br></a>
+
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+  Eliminar mi cuenta
+</button>
+
+
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        ¿Realmente desea eliminar su cuenta? Esta acción no se puede revertir.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-success" data-bs-dismiss="modal">Volver</button>
+        <a href="../Users/account-deleted.php"class="btn btn-danger">Eliminar cuenta</a>
+      </div>
+    </div>
+  </div>
+</div>
+                              
+        </div>
+    </div>
+</div>
 </body>
 </html>

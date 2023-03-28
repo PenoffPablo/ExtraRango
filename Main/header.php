@@ -5,13 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ExtraRango</title>
+    <link rel="stylesheet" href="../css/estilos.css">
 
 </head>
+<<?php 
+include("../BBDD/conexion.php");
+
+if (isset($_SESSION['id_usuario'])) {
+    $user_id = $_SESSION['id_usuario'];
+    $sql = "SELECT * FROM usuarios WHERE id_usuario = '$user_id'";
+    $resultado = mysqli_query($conexion, $sql);
+
+    if (mysqli_num_rows($resultado) == 1) {
+        $row = mysqli_fetch_assoc($resultado);
+
+        $nombre = $row["nombre"]; 
+    } else {
+        echo "Error al obtener los datos del usuario";
+    }
+} else {
+    echo "Error: la variable 'id_usuario' no está definida";
+}
+?>
+?>
+
 <body>
 <header class="bg-white">
   <nav class="navbar navbar-expand-lg navbar-light bg-white">
     <div class="container-fluid">
-      <a class="navbar-brand logo" href="index.php"><img src="../imagenes/Logo_ExtraRango.png"></a>
+      <a class="navbar-brand logo" href="../Main/index.php"><img src="../imagenes/Logo_ExtraRango.png"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -40,10 +62,16 @@
             <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
             <button class="btn btn-primary mx-2" type="submit">Buscar</button>
           </form>
-          <?php if(isset($_SESSION['user_id'])) { ?>
+          <?php if(isset($_SESSION['id_usuario'])) { ?>
   <div class="d-flex align-items-center justify-content-center btn-user">
-    <h4 class="me-2">¡Hola, <?php echo $user['nombre']; ?>!</h4>
-    <a href="../Users/logout.php" class="btn btn-outline-primary mx-2 " type="submit">Cerrar Sesión <i class="bi bi-box-arrow-right"></i></a>
+  <div class="dropdown user-account">
+    <h5 class="btn btn-primary dropdown-toggle mt-2" data-bs-toggle="dropdown" aria-expanded="false">¡Hola,<?php echo "$nombre"?></h5>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="../Users/profile.php">Mi Perfil</a></li>
+    <li><a class="dropdown-item" href="../Users/logout.php">Cerrar Sesión</a></li>
+  </ul>
+</div>
+
   </div>
 <?php } else { ?>
   <div class="d-flex align-items-center justify-content-center btn-user">

@@ -17,9 +17,9 @@
 </head>
 <?php
 session_start();
-if(isset($_SESSION['user_id'])) {
-  $user_id = $_SESSION['user_id'];
-  // Aquí puedes obtener los datos del usuario desde la base de datos y guardarlos en una variable $user
+if(isset($_SESSION['id_usuario'])) {
+  $id_usuario = $_SESSION['id_usuario'];
+
 }
 ?>
 <body class="bg-light custom-margin">

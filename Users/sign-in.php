@@ -48,14 +48,6 @@
           <label for="password" class="form-label">Contraseña</label>
           <input type="password" name="pass" id="pass" class="form-control" required placeholder="Debe contener de 8 a 16 caracteres">
         </div>
-
-        <div class="mb-3">
-        <label for="imagen" class="btn btn-primary" >Selecciona una imagen de perfil:</label>
-    <input type="file" id="imagen" name="imagen" class="input-file"  required><br>
-
-        </div>
-        <ul><li>Formatos permitidos: PNG/JPG</li></ul>
-        <div class="text-center">
           <button type="submit" class="btn btn-primary">Registrarse</button>
         </div>
       </form>

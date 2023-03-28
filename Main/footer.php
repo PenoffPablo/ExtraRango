@@ -22,9 +22,9 @@
         <div class="icon-social">
 
         <ul class="list-unstyled list-inline text-center">
-          <li class="list-inline-item"><a href="#" class=""><i class="bi bi-whatsapp whatsapp icon"></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="bi bi-facebook facebook icon"></i></i></a></li>
-          <li class="list-inline-item"><a href="#"><i class="bi bi-instagram instagram icon"></i></a></li>
+          <li class="list-inline-item"><a href="wa.link/yi6aq5" class=""><i class="bi bi-whatsapp whatsapp icon"></i></a></li>
+          <li class="list-inline-item"><a href="https://www.facebok.com/pablo.penoff"><i class="bi bi-facebook facebook icon"></i></i></a></li>
+          <li class="list-inline-item"><a href="https://www.instagram.com/pablopenoff"><i class="bi bi-instagram instagram icon"></i></a></li>
         </ul>
 
         </div>
