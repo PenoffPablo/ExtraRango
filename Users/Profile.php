@@ -66,7 +66,7 @@ if (isset($_SESSION['id_usuario'])) {
                                 <a href="../Users/change-pass.php"><h5>¿Desea cambiar su contraseña?</h5></a><br>
                                 
                                 <a href="../Users/change-phone.php"><h5>¿Desea cambiar su número de teléfono?</h5></a><br>
-                                <a href="../Main/index.php"><h5>Cerrar Sesión</h5><br></a>
+                                <a href="../Users/logout.php"><h5>Cerrar Sesión</h5><br></a>
 
 <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
   Eliminar mi cuenta
