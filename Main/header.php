@@ -40,7 +40,7 @@ if (isset($_SESSION['id_usuario'])) {
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active text-primary" aria-current="page" href="#">Tienda</a>
+            <a class="nav-link active text-primary" aria-current="page" href="#">Contáctanos</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-primary" href="#">Nosotros</a>
@@ -75,7 +75,7 @@ if (isset($_SESSION['id_usuario'])) {
   </div>
 <?php } else { ?>
   <div class="d-flex align-items-center justify-content-center btn-user">
-    <a href="../Users/sign-in.php" class="btn btn-outline-primary mx-2" type="submit">Registrarse <i class="bi bi-person-fill-add"></i></a>
+    <a href="../Users/sign-up.php" class="btn btn-outline-primary mx-2" type="submit">Registrarse <i class="bi bi-person-fill-add"></i></a>
     <a href="../Users/login.php" class="btn btn-outline-primary mx-2 " type="submit">Iniciar Sesión <i class="bi bi-person-circle"></i></a>
   </div>
 <?php } ?>
